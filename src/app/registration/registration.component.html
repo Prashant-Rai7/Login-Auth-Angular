@@ -1,0 +1,45 @@
+
+<div class="parentFormContainer">
+  <div id="formContainer">
+    <h2 class="mb-3">User Registration</h2>
+    <form class="container" [formGroup]="myForm">
+      <div class="mb-3">
+        <label  class="form-label d-flex justify-content-start">Name</label>
+        <input type="text" class="form-control" formControlName="name" [(ngModel)]="name">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label d-flex justify-content-start">Email</label>
+        <input type="email" class="form-control" formControlName="email" [(ngModel)]="email">
+      </div>
+      <div class="mb-3">
+
+        <label class="form-label d-flex justify-content-start">Password</label>
+        <input type="password" class="form-control" formControlName="password" [(ngModel)]="password">
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary w-100" id="submitBtn" (click)="submitForm()">Submit</button>
+      </div>
+      <div id="login">Already have an account ?
+        <a  routerLinkActive="active" routerLink="/login">Login</a>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- 
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of data">
+      <td>{{person.name}}</td>
+      <td>{{person.email}}</td>
+      <td>{{person.pass}}</td>
+    </tr>
+  </tbody>
+</table> -->

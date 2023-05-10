@@ -1,0 +1,38 @@
+nav{
+  background-color: #6666666b;
+  font-size: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+img{
+  height: 60px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+a{
+  color: white;
+  margin-left: 20px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+a:hover{
+  background-color: #fff;
+}
+a:active{
+  color: rgb(0, 217, 255);
+  background-color: #000000;
+}
+
+h2{
+  color: rgb(83, 248, 253);
+  margin-right: 40px;
+  cursor: pointer;
+}
+ul{
+  display: flex;
+}
