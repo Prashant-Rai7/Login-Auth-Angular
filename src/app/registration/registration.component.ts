@@ -26,9 +26,9 @@ export class RegistrationComponent {
     { name: 'Jane', email: 'jane@gmail.com', pass: 'hfdsfdf' },
     { name: 'Bob', email: 'bob@gmail.com', pass: 'bdfbsddmnc' },
   ];
-  name: string ='';
+  name: string = '';
   email: string= '';
-  password: string='';
+  password: string= '';
 
   submitForm(){
     // alert(this.myForm.value.name + " " + "registered Successfully")
