@@ -1,13 +1,14 @@
 const mongoose = require("mongoose");
 
 const registration_data = new mongoose.Schema({
-  name: {
+  adminName: {
     type: String,
     required: true,
   },
   email: {
     type: String,
     required: true,
+    unique: true,
   },
   password: {
     type: String,
@@ -17,13 +18,13 @@ const registration_data = new mongoose.Schema({
 
 const signup_data = mongoose.model("signup_data", registration_data);
 
-const document = new signup_data({ name: 'John', email: 'john@gmail.com', password: 'abcdef'});
+// const document = new signup_data({ name: 'John', email: 'john@gmail.com', password: 'abcdef'});
 
-document.save()
-.then(() => {
-  console.log("Document inserted")
-}).catch((err) => {
-  console.log("this is error......"+ err)
-})
+// document.save()
+// .then(() => {
+//   console.log("Document inserted")
+// }).catch((err) => {
+//   console.log("this is error......"+ err)
+// })
 
 module.exports = signup_data;
