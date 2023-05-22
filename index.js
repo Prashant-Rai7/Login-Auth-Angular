@@ -14,7 +14,13 @@ app.use(bodyParser.json())
 app.use(cors())
 
 const Routes = require('./routes/route')
+const loginRoutes = require('./routes/login')
+const registerRoutes = require('./routes/register')
+
 app.use(Routes)
+app.use(loginRoutes)
+app.use(registerRoutes)
+
 const Model = require('./models/model')
 
  

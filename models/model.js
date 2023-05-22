@@ -13,6 +13,10 @@ const registration_data = new mongoose.Schema({
   password: {
     type: String,
     required: true,
+  },
+  cnfpassword: {
+    type: String,
+    required: true,
   }
 });
 
